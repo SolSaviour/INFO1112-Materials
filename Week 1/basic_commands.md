@@ -7,7 +7,7 @@ The lab contains a LOT of commands, you are not expected to memorise them all. B
 | Command | Description | Usage | Useful Flags * |
 | -- | -- | -- | -- |
 | ls | "List" files in a given directory | `ls /home/dylan/Desktop [-a\|-l]` | <ul><li>-a (show hidden files)</li><li>-l (show permissions)</li></ul> |
-| cd | "change directory" | `cd ~/Desktop` | NA |
+| cd | "change directory" | `cd ../Desktop` (.. means "back a folder") | Not a flag, but `cd -` goes back to the previous directory you were at, great for jumping between folders! |
 | cp | "copy" file(s) or folder(s) to a new location |  `cp [-r] <target> [-t] <destination>` | <ul><li>-r (copy folders))</li><li>-t (allows multiple targets, must precede destination)</li></ul> |
 | cp | make a copy of a file in same location | `cp [-r] <target> <target_copy>` | Same as above |
 | mv | "move" - rename file | `mv <old_filename> <new_filename>` | NA |
