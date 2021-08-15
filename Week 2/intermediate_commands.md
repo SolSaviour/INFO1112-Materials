@@ -26,7 +26,7 @@ This is quite a difficult skill to master at first, but you'll get the hang of i
 
 https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285 
 
-I still google "regex" everytime I need it.
+I still have to google "regex" everytime I need it, so don't worry if you can't remember them ;)
 
 ## chmod
 
@@ -48,3 +48,32 @@ The first "rwx" (after the "d" on line 2) represents **owner permissions**. Dyla
 The second "r-x" represents **group permissions**. All users belonging to the group "egg" can read and execute, but not write to, the folder "stuff".
 
 The last "r-x" represents **other permissions**. "The other category includes public users that are not part of group members or ownership. If you are permitting the others, we can say you are allowing everybody in the world to access the files/folders."
+
+---
+
+Another common format of `chmod` you'll see is using numbers to set permissions.
+
+**Example**
+
+`$ chmod 755 file.txt`
+
+What is this "755"??
+
+It's just alternative way to set permissions!
+
+Each integer, from left to right, represents user, group, and other permissions, respectively. 
+
+| Integer | Permission |
+| -- | -- |
+| 7 | rwx |
+| 6 | rw- |
+| 5 | r-x |
+| 4 | r-- |
+| 3 | -wx |
+| 2 | -w- |
+| 1 | --x |
+| 0 | --- |
+
+The easy way to remember this is to pretend it's counting in binary. With each positive increase in the integer, the permissions are changed "binary-like".
+
+[This](https://www.linuxscrew.com/chmod-777) is a gret site which explains permissions really well.
