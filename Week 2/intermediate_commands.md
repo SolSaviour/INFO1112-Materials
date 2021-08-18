@@ -6,7 +6,7 @@ https://cheatography.com/tme520/cheat-sheets/grep-english/
 
 This is quite a difficult skill to master at first, but you'll get the hang of it. 
 
-`grep [-i|-v|-w|-c|-l|-n|-r] 'string' <direcory_or_file> ...`
+`grep [-i|-v|-w|-c|-l|-n|-r] 'string' <directory_or_file> ...`
 
 > The ellipses ("...") means you can add multiple files/directories. 
 
@@ -26,7 +26,7 @@ This is quite a difficult skill to master at first, but you'll get the hang of i
 
 https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285 
 
-I still have to google "regex" everytime I need it, so don't worry if you can't remember them ;)
+I still have to google "regex" every time I need it, so don't worry if you can't remember them ;)
 
 ## chmod
 
@@ -76,4 +76,4 @@ Each integer, from left to right, represents user, group, and other permissions,
 
 The easy way to remember this is to pretend it's counting in binary. With each positive increase in the integer, the permissions are changed "binary-like".
 
-[This](https://www.linuxscrew.com/chmod-777) is a gret site which explains permissions really well.
+[This](https://www.linuxscrew.com/chmod-777) is a great site which explains permissions really well.
