@@ -77,3 +77,10 @@ Each integer, from left to right, represents user, group, and other permissions,
 The easy way to remember this is to pretend it's counting in binary. With each positive increase in the integer, the permissions are changed "binary-like".
 
 [This](https://www.linuxscrew.com/chmod-777) is a great site which explains permissions really well.
+
+### Umask
+
+
+
+Files: 666 - 022 = 644. The owner can read and modify the files. Group and others can only read the files.
+Directories: 777 - 022 = 755.The owner can cd into the directory, and list, read, modify, create or delete the files in the directory. Group and others can cd into the directory and list and read the files.
