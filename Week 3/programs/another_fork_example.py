@@ -3,10 +3,9 @@ import os, sys
 
 def fork_and_run():
     os.environ["QUERY_STRING"] = input("What is your name? ")
-    pid = os.fork()
     cmd = '/bin/python3'
+    pid = os.fork()
     if pid == 0: # child is 0, always 0. How to remember? When a child is born, they are age 0!!! Just like their PID.
-        print("CHILD HAS FORKED, RUNNING LS")
         os.execle(cmd, cmd, "child.py", os.environ)
         sys.exit(99)
     elif pid == -1:

@@ -5,7 +5,8 @@ cmd = "/bin/python3"
 pid = os.fork()
 if pid == 0:
     print(f"=> parent.py: CHILD with PID = {os.getpid()}\n")
-    os.execv(cmd, (cmd, "child.py"))
+    os.execv(cmd, (cmd, "child.py")) # /bin/python3 child.py
+    print("WONT GET EXECUTED")
     sys.exit(99) #Who can tell me why this line doesn't run?
 elif pid > 0:
     print(f"=> parent.py: PARENT with PID = {os.getpid()}")

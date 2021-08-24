@@ -12,7 +12,7 @@ except KeyError:
 
 print("\nI am the NEW process. I REPLACED parent.py child thread when \"execv()\" was called.")
 
-print("Sleeping for 10 seconds...\n\n" + "="*50 + "\n")
+print("Sleeping for 3 seconds...\n\n" + "="*50 + "\n")
 
-time.sleep(1)
+time.sleep(3)
 sys.exit(30)
