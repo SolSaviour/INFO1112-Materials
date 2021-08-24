@@ -45,6 +45,8 @@ The signals you'll use the most are:
 
 Status code Z (or Z+) for zombie process.
 
+More on zombie processes [here](https://linuxreviews.org/Defunct_process).
+
 ### What could we do to deal with this process?
 
 `$ kill -9 <pid of the parent>`
