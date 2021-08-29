@@ -57,7 +57,7 @@ A process (binder) contains a large number of pages.
 On your desk (physical memory, RAM), you have a small number of picture frames. 
 => In order to read a page, you must take it out of the binder and place it in a frame.
 
-## Interpreting the ps command
+## Interpreting the `ps aux` command
 
 | Code | Description |
 | -- | -- |
