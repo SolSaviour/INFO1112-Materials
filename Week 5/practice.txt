@@ -1,0 +1,41 @@
+Instruction: 00100001 10110100
+Operation code: 00100001 >> 2 = 0b0000100 = 0b100 = 4
+Register: 00100001 & 0b11 = 0b00000001 = 0b1 = 1
+Memory address: 0b10110100 = 0xB4
+Instruction in hexadecimal: 0x21 0xB4
+
+Instruction: 00010111 00010010
+Operation code: 
+Register: 
+Memory address: 
+Instruction in hexadecimal
+
+Instruction: 00011010 00110100 
+Operation code
+Register
+Memory address
+Instruction in hexadecimal
+
+Instruction: 00011101 00010110: 
+Operation code: 
+Register: 
+Memory address: 
+Instruction in hexadecimal: 
+
+Instruction: 00000010 11001001: 
+Operation code: 
+Register: 
+Memory address: 
+Instruction in hexadecimal: 
+
+Instruction: 00000111 00101101: 
+Operation code: 
+Register: 
+Memory address: 
+Instruction in hexadecimal: 
+
+Instruction: 00001000 10100100: 
+Operation code: 
+Register: 
+Memory address: 
+Instruction in hexadecimal: 
