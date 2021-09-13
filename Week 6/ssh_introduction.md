@@ -126,9 +126,9 @@ ssh -p 3001 <username>@localhost
     * in your vm, does the `~/.ssh` folder exist and is the file `authorized_keys` inside it?
 * If on your virtual machine, you can't access or create a file, do it as the superuser by typing `su` and using the root password.
 
-# How to transfer files
+# How to transfer files (host to VM)
 
-1. Use the scp command! In your local terminal, write: (host to VM)
+1. Use the scp command! In your local terminal, write:
 
 ```bash
 scp -P 3001 <filename> <username>@localhost:<absolute path of destination to store the file> # NOTE: Using a capital P not a small p
