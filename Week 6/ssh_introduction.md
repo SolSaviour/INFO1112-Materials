@@ -123,8 +123,8 @@ ssh -p 3022 <username>@localhost
 1. Use the scp command! In your local terminal, write:
 
 ```bash
-scp -P 3001 <filename> <username>@localhost:<absolute path of destination to store the file> # NOTE: Using a capital P not a small p
-e.g. scp -P 3001 server.py dylan@localhost:/home/dylan/
+scp -P 3022 <filename> <username>@localhost:<absolute path of destination to store the file> # NOTE: Using a capital P not a small p
+e.g. scp -P 3022 server.py dylan@localhost:/home/dylan/
 ```
 
 
