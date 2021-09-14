@@ -71,49 +71,39 @@ You now have a user ready for ssh'ing.
 
 ## Steps to SSH
 
-0. DON'T run the `vmboxmanage modifyvm` command from the tute sheet, instead follow the instructions below.
-
-1. We need to Port Forward. See reference 4 and 5 for more information. 
+1. DON'T run the `vmboxmanage modifyvm` command from the tute sheet. The `tau.ova` comes complete with the necessary port forwarding rule. 
 
 ---
 
-Basically, we need to tell our local machine to send our information (that we want encrypted) to a specific port - in the tutorial sheet, this port is 3001 - and tell our virtual machine to pick up this information from port 22. This can be done by:
+Last week we generated a public/private key pair using `ssh-keygen` in order to give Ed the public key so we could complete the homework.
 
-- Going into VirtualBox app
-- Clicking the yellow cog titled "Settings"
-- Find the Network tab and click it
-- Find the drop down for "Advanced" and click it
-- Click "Port Forwarding"
-- Press the green plus in the top right corner of the new window, an empty row should appear
-- Title it "guestssh" (first column), give the 3rd column the value 3001 and the last column the value 22
-- Press okay and okay again
+WSL2 does not like ssh'ing, so if you're on Windows, use [Git Bash](https://gitforwindows.org/).
 
-If we try to ssh to our virtual machine now, we will be denied access. Why? We need to give a key to the virtual machine that uniquely identifies us.
-This allows the virtual machine to say: "I know who you are, you're allowed in". This is a security measure.
+If you normally use WSL, follow the instructions below in your new Git Bash terminal:
 
-> Sam's note about step 2: skip if you already have an SSH key on your local computer. If you are not sure about having an SSH key on your computer, type in: cat ~/.ssh/id_rsa.pub if you get a long list of letters and numbers, then you have a key (and this is your key) and you can skip 2 otherwise if you get an error message, you don't have a key and you should do step 2.
+Generate an ssh public key in **your local terminal** (If you're on windows, use Git-Bash, NOT WSL) with `ssh-keygen`. Just hit enter for each prompt after you've entered in the command. You can now find your public key in ~/.ssh/id_rsa.pub. The question now is: How do we get the key to the virtual machine?
 
 ---
 
-2. Generate an ssh public key in **your local terminal** with `ssh-keygen`. Just hit enter for each prompt after you've entered in the command. You can now find your public key in ~/.ssh/id_rsa.pub. The question now is: How do we get the key to the virtual machine?
+2. In your virtual machine, **log into your user, NOT ROOT** (using `su <username>`), and create a .ssh folder in your home directory (`mkdir ~/.ssh`), and inside that folder create an empty file called authorized_keys (using the touch command). 
 
-3. In your virtual machine, **log into your user, NOT ROOT**, and create a .ssh folder in your home directory, and inside that folder create an empty file called authorized_keys (using the touch command). 
-
-4. ssh-copy-id is how we give the virtual machine our key. **In your local terminal**, enter the command with the syntax: 
+3. ssh-copy-id is how we give the virtual machine our key. **In your local terminal**, enter the command with the syntax: 
 
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub <username>@localhost -p 3001           
-# [chown <username>:<username> ~/home/<username>/.ssh/authorized_keys] 
+ssh-copy-id -i ~/.ssh/id_rsa.pub <username>@localhost -p 3022           
+# [chown <username>:<username> /home/<username>/.ssh/authorized_keys] 
 # use the above command if the files were mistakenly made while logged in as root (i.e., if the owner of the files is root)
 ```
 
 It's important to note which username you enter here. This essentially adds our public key to the file titled authorized_keys in the virtual machine.
 Now the virtual machine knows who we are and we're ready to ssh into it!
 
-5. **In your local terminal** enter the command with syntax:
+> The `ssh-copy-id` command is the equivalent of just copying the contents of `~/.ssh/id_rsa.pub` (from your host machine) and pasting them in the `~/.ssh/authorized_keys` (in the virtual machine), but it does so in a safe manner.
+
+4. **In your local terminal** enter the command with syntax:
 
 ```bash
-ssh -p 3001 <username>@localhost
+ssh -p 3022 <username>@localhost
 ```
 
 # TROUBLESHOOTING
