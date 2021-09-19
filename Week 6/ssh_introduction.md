@@ -10,6 +10,8 @@ The tutorial walks you through setting up a virtual machine, using either tau.ov
 
 From there, we change the root password and add our own user and set the password for that user. 
 
+We want to be able t
+
 ### /home directory
 
 The /home directory is a place where by default all user home directories are created.
