@@ -1,6 +1,4 @@
-# Networking Explained Simply :)
-
-## Routers, Switches, Modems
+# Routers, Switches, Modems
 
 In your home network, which we call a *LAN* (Local Area Network), you'll most likely have a **router** and a **modem**.
 
@@ -40,9 +38,3 @@ But this is what a typical switch will look like, it has lots of Ethernet ports 
     <img src="https://www.lifewire.com/thmb/oapHN6wz5Fn0difwMj2rVe90OIY=/774x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ubiquity-48-port-switch-d1544208be7c4845b49b75974241a2fa.jpg" style="height:50%;width:50%;">
     <figcaption><a href=https://www.lifewire.com/definition-of-network-switch-817588>LifeWire</a> - Switch</figcaption>
 </figure>
-
-
-
-# Resources
-
-* 
