@@ -3,8 +3,7 @@
 ## [DHCP](https://www.logitrain.com.au/blog/the-dhcp-explained-simple-and-easy.html)
 
 <figure>
-    <img src="https://www.logitrain.com.au/wp-content/uploads/2021/09/DHCP-explained-simple-and-easy.jpg
-" style="height:50%;width:50%;">
+    <img src="DHCP-explained-simple-and-easy.jpg" style="height:50%;width:50%;">
     <figcaption><a href=https://www.logitrain.com.au/blog/the-dhcp-explained-simple-and-easy.html>Logitrain</a></figcaption>
 </figure>
 

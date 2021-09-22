@@ -28,8 +28,7 @@ Well, routers are more commonly used to describe the technology which connects L
 And this icon for a switch:
 
 <figure>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fcisco-switch-icon-clipart.png&f=1&nofb=1
-" style="height:25%;width:25%;">
+    <img src="switch.png" style="height:25%;width:25%;">
 </figure>
 
 But this is what a typical switch will look like, it has lots of Ethernet ports unlike the router image above which only has 4 ports. (the word *port* here is used to describe the hole in which we plug the cable into, not like a computer port).
