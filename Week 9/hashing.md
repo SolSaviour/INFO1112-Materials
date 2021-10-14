@@ -37,4 +37,4 @@ In this sense, hashing affords us message integrity. We can verify the integrity
 
 If you're interested, here is the exact way we use hashing on the internet: [rfc2660](https://datatracker.ietf.org/doc/html/rfc2660#section-2.4.5)
 
-> The syntax || within MAC = hex(H(Message||[<time>]||<shared key>)) means "append"
+> The syntax || within MAC = hex( H( Message || [\<time\>] || \<shared key\> ) ) means "append"
