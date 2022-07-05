@@ -113,7 +113,7 @@ THERE IS!
 
 **Asymmetric crypto to the rescue.**
 
-Let's get David (on the left) to generate a public and private key PAIR - using RSA - and send the key online over to Zach (on the left).
+Let's get David (on the right) to generate a public and private key PAIR - using RSA - and send the key online over to Zach (on the left).
 
 <img src="adv_sitch.PNG" width="70%">
 
