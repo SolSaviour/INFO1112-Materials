@@ -138,3 +138,7 @@ And BAM, now both parties (Zach and David) have a copy of the symmetric key and 
 # SUMMARY
 
 We mainly use symmetric encryption for communication as it is much faster, due to small key sizes, but we employ asymmetric cryptography in order to establish a shared secret (the symmetric key) between the communicating parties.
+
+## Note
+
+Yes. I know it's actually Owen Wilson.
