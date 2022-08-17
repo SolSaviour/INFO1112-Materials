@@ -35,7 +35,7 @@ The signals you'll use the most are:
 
 > See signals.sh for example usage of these commands!
 
-## System Calls
+## System Calls (Fork, Exec, Wait explained by Me)
 
 **DEMO** - https://youtu.be/WrMtdHrpAm0
 
