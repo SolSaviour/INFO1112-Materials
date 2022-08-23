@@ -6,6 +6,8 @@ On your local machine, either using your terminal, wsl, or git bash, write:
 $ ssh-keygen
 ```
 
+**Note** ONLY use GitBash for submitting your homework / assignments via Git, do not use it as a Linux terminal for the semester.
+
 My output looks like this:
 
 ```bash
