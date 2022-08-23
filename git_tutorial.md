@@ -8,7 +8,7 @@ $ ssh-keygen
 
 ---
 
-**Note**: ONLY use GitBash for submitting your homework / assignments via Git, do not use it as a Linux terminal for the semester.
+**Note**: ONLY use GitBash for submitting your homework / assignments via Git, do _not_ use it as a Linux terminal for the semester.
 
 ---
 
