@@ -49,6 +49,6 @@ PR = 20 + NI \
 
 ## Additional reading and references
 
-- "Ps Output Fields". (Knowedge Base) From: https://kb.iu.edu/d/afnv 
+- "Ps Output Fields". (Knowledge Base) From: https://kb.iu.edu/d/afnv 
 - "How to set linux processes priority using nice and renice commands" (Tecmint) From: https://www.tecmint.com/set-linux-process-priority-using-nice-and-renice-commands/
 
