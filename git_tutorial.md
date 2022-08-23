@@ -88,7 +88,7 @@ We can now commit any changes we've made to the repository.
 
 Think about Git like the Post Office. 
 
-Our local machine (our house) needs to send some files to Ed (our second remote house) because we're planning on moving there in the summer.
+Our local machine (our house) needs to send some files to Ed (our holiday house) because we're planning on moving there in the summer.
 
 We can add all of things (files, folders, music, documents, etc) into a box using `git add -A` and put a shipping sticker on the box so that it's ready to be shipped with `git commit -m "All ready for moving!"`.
 
