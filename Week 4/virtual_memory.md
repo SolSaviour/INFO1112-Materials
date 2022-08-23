@@ -2,7 +2,7 @@
 
 RAM is often referred to as memory. 
 
-This is, your computers short time memory (i.e., **volatile memory**), which temporarily stores important data or information while the computer is working. 
+This is your computers short time memory (i.e., **volatile memory**) which temporarily stores important data or information while the computer is working. 
 
 Processes rely on memory to run. They need space to hold all of their information that keeps themselves up and running.
 
