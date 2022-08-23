@@ -21,7 +21,7 @@ At one point this will no longer be possible. Then there are two choices:
 
 ---
 
-When the need to free up memory arises, and the OS have exhausted its resources – the use of **disk space comes to the rescue**.
+When the need to free up memory arises, and the OS has exhausted its resources – the use of **disk space comes to the rescue**.
 
 The problem is just that a hard-drive (or disk) is not designed to deliver data at the speed required to compute data.
 
