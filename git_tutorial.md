@@ -3,7 +3,7 @@
 On your local machine, either using your terminal, wsl, or git bash, write:
 
 ```bash
-$ ssh-keygen
+$ ssh-keygen -t ed25519
 ```
 
 ---
@@ -16,13 +16,13 @@ My output looks like this:
 
 ```bash
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/Dylan/.ssh/id_rsa):
-/home/Dylan/.ssh/id_rsa already exists.
+Enter file in which to save the key (/home/Dylan/.ssh/id_ed25519):
+/home/Dylan/.ssh/id_ed25519 already exists.
 Overwrite (y/n)? y
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
-Your identification has been saved in /home/Dylan/.ssh/id_rsa
-Your public key has been saved in /home/Dylan/.ssh/id_rsa.pub
+Your identification has been saved in /home/Dylan/.ssh/id_ed25519
+Your public key has been saved in /home/Dylan/.ssh/id_ed25519.pub
 The key fingerprint is:
 SHA256:---------------------------------- Dylan@razer
 The keys randomart image is:
@@ -41,24 +41,17 @@ The keys randomart image is:
 
 > Note: I removed my randomart and key fingerprint.
 
-Next, I print the contents of my public key to the terminal. The PUBLIC KEY will be stored in: `~/.ssh/id_rsa.pub`.
+Next, I print the contents of my public key to the terminal. The PUBLIC KEY will be stored in: `~/.ssh/id_ed25519.pub`.
 
 So I would write:
 
 ```bash
-$ cat ~/.ssh/id_rsa.pub
+$ cat ~/.ssh/id_ed25519.pub
 ```
 
 And you would get some output that looks like this (it will be in one long line for you, make sure you copy it this way):
 
-        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDn4QmAyOnOkHbKnD1aUPMSUhpy9G
-        PvViS5H+5EzTsbwmvW8N9tgMlHrsjchm7IxHIzG52BAKY7RBkWdHSi8Xw8a+60CikWV
-        //BUoRqUdix5I8Y82fKuzs/Rx3OsdfsdfsdfvxcvxcN16ogfppZyjJ1DRPzFfYcy75gyx
-        xWIfZeIqU4FBz04pWizh7MK8lMH7Ga2nze3Z4m54RztpVcQWcHXAQdqvEtro585qSqmL
-        nDmkOuPcQ0W61QfCxWT9jL+zNkQ9lsdkjelnasdawG5MKNsxu0QWLatu8a9D7pHfqmflt
-        oUwoCEJxlgMasldkasdallasdr8OXR+2SUiXsI8vT83v6+mBsjPgaUHU65HVOsNmyynVp
-        xtutlqasldkajsd NPCUvPoWSoPx6hi1RGZbvqL2NwyYrhkM+iutujTt6FDESPiSB5XA
-        iI/ns3gXiHyM=
+        ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAqPRDpQaSTOPIosDXmAcDVR/FeOKpPJDWnaXtsZQXdI s
 
 Copy this public key and go to this URL: https://edstem.org/settings/ssh
 
