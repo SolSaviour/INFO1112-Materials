@@ -1,11 +1,3 @@
-####################################
-# Written by Tutor Anuj Dhavalikar #
-####################################
-
-"""
-You can also find these programs in his Tutorial workspace
-"""
-
 import sys
 
 CLEAR = 0    #0b00000000	0x00
