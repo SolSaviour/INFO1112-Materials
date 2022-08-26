@@ -10,13 +10,13 @@ import sys
 
 CLEAR = 0    #0b00000000	0x00
 LOAD = 1     #0b00000001	0x01
-STORE = 2    #0b	0x	
-ADD = 3      #0b	0x
-SUB = 4      #0b	0x
-JUMP = 5     #0b	0x
-JUMPZERO = 6 #0b	0x
-SAVEPC = 7   #0b	0x
-QUIT = 8     #0b	0x
+STORE = 2    #0b00000010	0x02	
+ADD = 3      #0b00000011	0x03
+SUB = 4      #0b00000100	0x04
+JUMP = 5     #0b00000101	0x05
+JUMPZERO = 6 #0b00000110	0x06
+SAVEPC = 7   #0b00000111	0x07
+QUIT = 8     #0b00001000	0x08
 
 memory = [0b0]*256  # 256 bytes of memory for code and data
 registers = [0]*4 # 4 registers
@@ -34,15 +34,29 @@ with open(sys.argv[1], 'rb') as f:
 		memory[i-1] = file_mem[i]
 
 while True: # main loop of emulator
+
+	# Preventing infinite loops using the instruction counter "instcount"
 	if instcount <= 0:
 		break
 	instcount = instcount - 1
 
+	# Dealing with the first byte (8 bits) of the instruction
 	inst = memory[pc]
+
+	## extract the operation code (the first 6 bits of the instruction)
 	opcode =  (inst >> 2)
+
+	## extract the register (the next 2 bits of the instruction)
 	register = 0b11 & inst # extract last two bits of the first byte of the instruction (which always contains the operation code and the register)
-	address =  memory[pc+1] # the second byte is the memory address
-	print(f"Computer Memory: {memory[:15]}\n")
+	
+	# Dealing with the second byte of the instruction
+	## extract the address
+	address =  memory[pc+1] # the second byte is the memory address. 
+
+	#### REMEMBER: Each index of the list "memory" represents 1 byte!
+
+
+	print(f"memory: {memory[:15]}\n")
 	print(f"<=== Instruction {int(pc/2)} ===>")
 
 	print(f"operation code={opcode}, {register=}, {address=}")
@@ -59,8 +73,12 @@ while True: # main loop of emulator
 		print(f"Registers after loading: {registers}")
 
 	elif opcode == ADD:
+		print("operation is: ADD") #memory[address], registers[register],+
+		print(f"Registers before loading: {registers}")
+		print(f"Adding the value in memory address {address} to the value stored in register {register}")
+		print(f"Storing\n\tregisters[{register}] + memory[{address}] = {registers[register]}+{memory[address]}\n\t\t\t\t = {registers[register] + memory[address]}\ninto register {register}\n")
 		registers[register] += memory[address]
-		print ("operation is: ADD") #memory[address], registers[register],+
+		print(f"Registers after adding: {registers}")
 		#### this is where we carry out the add operation
 
 	elif opcode == STORE:
@@ -72,9 +90,11 @@ while True: # main loop of emulator
 
 	elif opcode == SUB:
 		print("operation is: SUB")
-		print(f"Register {register} before subtraction: {registers[register]}")
+		print(f"Registers before subtraction: {registers}")
+		print(f"Subtracting the value in memory address {address} from the value stored in register {register}")
+		print(f"Storing\n\tregisters[{register}] - memory[{address}] = {registers[register]}-{memory[address]}\n\t\t\t\t = {registers[register] - memory[address]}\ninto register {register}\n")
 		registers[register] -= memory[address]
-		print(f"Register {register} after subtraction: {registers[register]}")
+		print(f"Registers after subtraction: {registers}")
 		#### this is where we carry out the subtract operation
 
 	elif opcode == JUMP:
