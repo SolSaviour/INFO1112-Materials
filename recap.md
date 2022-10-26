@@ -1,0 +1,33 @@
+- converting numbers to binary and vice versa (know 2s compliment) **
+- converting between different bases (decimal to hex)
+- user mode vs system mode (what is the kernel, why is it important?)
+- absolute vs relative paths **
+- what is an interrupt (week 2 - processes)
+- program vs process
+- chmod command and visualising permissions (i.e., drwx---r-x) **
+- system calls (know fork, exec, and wait!)
+- what is an environment variable?
+- what is virtual memory? Why do we need it?
+- nice vs renice (why do we need priorities and scheduling?)
+- what is the init process?
+- Define: MBR, GRUB, BIOS, kernel
+- bit shifting and bit masking (using them in working examples) **
+- emulators vs virtual machines (benefits of each - learn the examples from the slides)
+- purpose of containers and their benefits (learn the examples from the slides)
+- packet vs circuit switching
+- Define: LAN, WAN, TCP/IP, IP, Protocol
+- TCP vs UDP (have examples for each)
+- basic understanding of each layer of the TCP/IP model (have a protocol example for each layer)
+- IPv4 vs IPv6, why are we moving towards IPv6?
+- understand the basic concept behind ARP, DNS, NAT, and DHCP ("what" and "why")
+- interpret ping, traceroute, dig (learn record types - A, AAAA, MX) outputs
+- what is a port?
+- understand why and when we use encryption (asymmetric - RSA | symmetric - AES) and hashing (MD5, SHA256)
+- what is a digital signature? encrypting using the private key, why does that work?
+- define serverless computing
+- Define: windows server (X-windows), JVM, Dalvik, HAL, Bionic
+- what is: XML, JSON, API and why are they important?
+- learn bash if statements, for and while loops, basic commands including:
+* cut, head, tail, grep (with flags), regex patterns *[](){}^.$ and using escape characters "/"
+* ls, cp, rm, mv, cd, cat, read (with while loops for file reading)
+* echo, find (with flags), sort, tr, incrementing variables
